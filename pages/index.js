@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import BookList from '../components/book_list'
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,7 +12,13 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
+      <BookList>
+        
+      </BookList>
+
       <section className={utilStyles.headingMd}>
+
         <p>[Your Self Introduction]</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import styles from './layout.module.scss'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
@@ -24,8 +24,14 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <a href="/"  className={`${styles.logo} ${styles.hp_hover}`}>
+      <img
+        src="/images/owl_logo.svg"
+        alt={name}
+      />
+      </a>
       <header className={styles.header}>
-        {home ? (
+        {/*{home ? (
           <>
             <img
               src="/images/profile.jpg"
@@ -51,7 +57,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )}
+        )}*/}
       </header>
       <main>{children}</main>
       {!home && (

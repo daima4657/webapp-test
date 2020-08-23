@@ -23,3 +23,17 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.logo {
+  
+}
+
+/*booklist*/
+
+.bookList{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
